@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="styleee.css">
+    <title>Sign In</title>
+</head>
+<body>
+<section>
+    <div class="form-box">
+        <div class="form-value">
+            <form id="loginForm">
+                <h2>Login</h2>
+                <div class="inputbox">
+                    <ion-icon name="mail-outline"></ion-icon>
+                    <input type="email" required>
+                    <label for="">Пользователь</label>
+                </div>
+                <div class="inputbox">
+                    <ion-icon name="lock-closed-outline"></ion-icon>
+                    <input type="password" required>
+                    <label for="">Пароль</label>
+                </div>
+                <div class="forget">
+                    <label for="">
+                        <input type="checkbox">Восстанавливать
+                        <a href="#">Забудьте мой пароль</a>
+                    </label>
+                </div>
+                <button type="button" onclick="validateLogin()">Авторизоваться</button>
+            </form>
+        </div>
+    </div>
+</section>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+<script>
+    function validateLogin() {
+        // You can add your login validation logic here
+        // For demonstration, let's show an alert for an invalid login
+        alert("Invalid login! Please check your email and password.");
+    }
+</script>
+</body>
+</html>
